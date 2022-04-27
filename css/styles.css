@@ -1,0 +1,389 @@
+
+:root {
+  --primery-texy-color: #212121;
+  --secondary-text-color: #757575;
+  --hover-text-color: #2196f3;
+  --absolut-white-header: #ffffff;
+  --title-footer-dark: #2f303a;
+  --mine-fone-color: #e5e5e5;
+  --team-button-color: #f5f4fa;
+  --contact-data-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primery-texy-color);
+  background-color: var(--mine-fone-color);
+  margin: 0;
+  
+}
+
+li {
+  list-style-type: none;
+}
+
+/*оформлення тексту навігаційних кнопок*/
+.navigation {
+  display: flex;
+  margin-left: 93px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+.navigation .link {
+  display: block;
+  padding: 20px 0px;
+}
+
+.contact-data {
+  display: flex;
+  margin-left: 331px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+.container-head {
+  display: flex;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.images li {
+  margin-right: 30px;
+}
+.images li :last-child {
+  margin-right: 0px;
+}
+
+.navigation li,
+.contact-data li {
+  margin-right: 50px;
+}
+
+.navigation :last-child,
+.contact-data :last-child,
+.images :last-child {
+  margin-right: 0px;
+}
+
+.list-benefits p {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  /* margin-top: 94px; */
+}
+
+.button-m:hover {
+  background-color: var(--absolut-white-header);
+  color: var(--hover-text-color);
+}
+.button-m {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  background: var(--hover-text-color);
+  color: var(--absolut-white-header);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.buttons .but + .but {
+  margin-left: 8px;
+}
+
+.button-p {
+  padding: 6px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--team-button-color);
+  color: var(--primery-texy-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filters {
+  padding-top: 94px;
+}
+
+button:focus,
+button:hover {
+  background: var(--hover-text-color);
+  color: var(--absolut-white-header);
+}
+
+.link:focus,
+.link:hover,
+.site-contacts:hover,
+.site-contacts:focus {
+  color: var(--hover-text-color);
+}
+
+.link {
+  color: var(--primery-texy-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+}
+.card-project {
+  width: 370px;
+  height: 404px;
+  background-color: rgba(238, 238, 238, 1);
+}
+
+.cards-team {
+  width: 270px;
+  height: 368px;
+  background-color: var(--absolut-white-header);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.container .line {
+  margin: auto;
+  padding-left: 0px;
+  margin-right: 0px;
+  Width: 1230px;
+  color: rgba(236, 236, 236, 1);
+  align-items: center;
+  size: 1px;
+  
+  }
+.logo {
+  color: var(--primery-texy-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.ourbenefits,
+.whatwedo {
+  margin-top: 94px;
+}
+
+/*оформлення першої частини логотипу*/
+.logo-web {
+  color: var(--hover-text-color);
+}
+
+.hero {
+  padding-bottom: 30px;
+  color: var(--absolut-white-header);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.section-team,
+.section-benefit {
+  padding: 94px 0px;
+}
+footer .container .section {
+  padding-top: 60px;
+}
+
+.section-work {
+  padding-bottom: 94px;
+  align-content: center;
+}
+ul,
+h1,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.car-list {
+  justify-content: center;
+  width: 270px;
+  height: 101px;
+}
+.list-benefits .car-list + .car-list {
+  margin-left: 30px;
+}
+
+.list-benefits {
+  display: flex;
+  justify-content: center;
+}
+
+.list-benefits h3 {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.p {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.personal {
+  display: flex;
+  justify-content: center;
+}
+
+.personal .cards-team + .cards-team {
+  margin-left: 30px;
+}
+
+.position,
+.projects-type {
+  color: var(--secondary-text-color);
+}
+
+.name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.position {
+  padding-bottom: 30px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-name {
+  padding: 0px 24px 0px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.projects-type {
+  padding: 4px 24px 20px 24px;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.address a {
+  color: var(--absolut-white-header);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+footer .logo {
+  color: var(--absolut-white-header);
+}
+
+.site-contacts {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+a[href="mailto:info@example.com"],
+a[href="tel:+380991111111"] {
+  color: var(--secondary-text-color);
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*outline: 1px solid #2196f3;*/
+}
+
+.page-header {
+  background-color: #e5e5e5;
+}
+.section-hero .container,
+footer .container {
+  background-color: var(--title-footer-dark);
+}
+
+.page-header .container,
+.benefits .container,
+.wtahwedo .container,
+.team .containar,
+main .container {
+  background-color: var(--absolut-white-header);
+}
+
+.herobox {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.projects .card-project {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.projects .card-project:nth-child(3*n) {
+  margin-left: 0px;
+}
+
