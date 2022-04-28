@@ -1,3 +1,7 @@
+::after,
+::before {
+  box-sizing: border-box;
+}
 
 :root {
   --primery-texy-color: #212121;
@@ -15,11 +19,15 @@ body {
   color: var(--primery-texy-color);
   background-color: var(--mine-fone-color);
   margin: 0;
-  
 }
 
 li {
   list-style-type: none;
+}
+
+.header {
+  display: block;
+  border-bottom: 1px solid #ececec;
 }
 
 /*оформлення тексту навігаційних кнопок*/
@@ -31,23 +39,25 @@ li {
   line-height: 1;
   letter-spacing: 0.02em;
 }
+
 .navigation .link {
   display: block;
-  padding: 20px 0px;
+  padding: 32px 0px;
 }
-
 .contact-data {
   display: flex;
   margin-left: 331px;
 }
 
-nav {
+.navigation-head {
   display: flex;
   align-items: center;
 }
-.container-head {
+
+.header .container {
   display: flex;
   align-items: center;
+  background-color: var(--absolut-white-header);
 }
 
 .images {
@@ -83,8 +93,7 @@ nav {
 .buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
-  /* margin-top: 94px; */
+  margin-bottom: 50px;
 }
 
 .button-m:hover {
@@ -92,10 +101,10 @@ nav {
   color: var(--hover-text-color);
 }
 .button-m {
+  font-family: "Roboto", sans-serif;
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
@@ -107,13 +116,15 @@ nav {
   letter-spacing: 0.06em;
 }
 
-.buttons .but + .but {
-  margin-left: 8px;
+.buttons .button-p:last-child {
+  margin-right: 8px;
 }
 
 .button-p {
+  font-family: "Roboto", sans-serif;
   padding: 6px 22px;
   border-radius: 4px;
+  border-width: 0;
   cursor: pointer;
   background: var(--team-button-color);
   color: var(--primery-texy-color);
@@ -122,9 +133,6 @@ nav {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-}
-.filters {
-  padding-top: 94px;
 }
 
 button:focus,
@@ -155,7 +163,8 @@ a {
 .card-project {
   width: 370px;
   height: 404px;
-  background-color: rgba(238, 238, 238, 1);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .cards-team {
@@ -166,16 +175,7 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.container .line {
-  margin: auto;
-  padding-left: 0px;
-  margin-right: 0px;
-  Width: 1230px;
-  color: rgba(236, 236, 236, 1);
-  align-items: center;
-  size: 1px;
-  
-  }
+
 .logo {
   color: var(--primery-texy-color);
   font-family: "Raleway";
@@ -218,8 +218,8 @@ a {
 .section-benefit {
   padding: 94px 0px;
 }
-footer .container .section {
-  padding-top: 60px;
+.section-team {
+  background-color: var(--team-button-color);
 }
 
 .section-work {
@@ -278,7 +278,6 @@ p {
 }
 
 .name {
-  padding-top: 30px;
   padding-bottom: 10px;
   text-align: center;
   font-weight: 500;
@@ -288,12 +287,14 @@ p {
 }
 
 .position {
-  padding-bottom: 30px;
   color: var(--secondary-text-color);
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+}
+.text-team {
+  padding: 30px 0px;
 }
 .projects {
   display: flex;
@@ -302,7 +303,7 @@ p {
 }
 
 .projects-name {
-  padding: 0px 24px 0px 24px;
+  margin: 0px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -311,27 +312,48 @@ p {
 }
 
 .projects-type {
-  padding: 4px 24px 20px 24px;
+  padding: 4px 0px 0px 0px;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
+.project-text {
+  width: 322px;
+  padding: 20px 24px;
+  border-left:  1px solid #eee ;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  }
 
 .address a {
-  color: var(--absolut-white-header);
+  padding-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.address {
-  padding-top: 20px;
-  padding-bottom: 60px;
+
+.address .link {
+  color: rgba(255, 255, 255, 0.6);
 }
+.address a:first-child {
+  color: var(--absolut-white-header);
+}
+.address a:last-child {
+  padding-bottom: 0px;
+}
+
 footer .logo {
   color: var(--absolut-white-header);
+}
+footer {
+  padding: 60px 0px;
+}
+
+.address {
+  padding-top: 20px;
 }
 
 .site-contacts {
@@ -346,6 +368,10 @@ a[href="mailto:info@example.com"],
 a[href="tel:+380991111111"] {
   color: var(--secondary-text-color);
 }
+.filters {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .container {
   width: 1200px;
@@ -353,37 +379,26 @@ a[href="tel:+380991111111"] {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /*outline: 1px solid #2196f3;*/
 }
 
-.page-header {
-  background-color: #e5e5e5;
-}
-.section-hero .container,
-footer .container {
+.section-hero,
+footer {
   background-color: var(--title-footer-dark);
 }
 
-.page-header .container,
-.benefits .container,
-.wtahwedo .container,
-.team .containar,
-main .container {
+.header,
+.benefits,
+.wtahwedo,
+main {
   background-color: var(--absolut-white-header);
 }
 
-.herobox {
+.section-hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.projects .card-project {
-  margin-left: 30px;
-  margin-bottom: 30px;
+  padding-top: 215px;
+  padding-bottom: 185px;
 }
 
 .projects .card-project:nth-child(3*n) {
   margin-left: 0px;
 }
-
