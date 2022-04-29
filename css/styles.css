@@ -25,7 +25,7 @@ li {
   list-style-type: none;
 }
 
-.header {
+.header .pictures {
   display: block;
   border-bottom: 1px solid #ececec;
 }
@@ -161,8 +161,8 @@ a {
   text-decoration: none;
 }
 .card-project {
+  display: block;
   width: 370px;
-  height: 404px;
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -320,11 +320,15 @@ p {
   letter-spacing: 0.03em;
 }
 .project-text {
-  width: 322px;
+  width: 320px;
   padding: 20px 24px;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
+}
+
+.card-project img {
+  display: block;
 }
 
 .address a {
@@ -353,7 +357,7 @@ footer {
 }
 
 .address {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .site-contacts {
@@ -399,6 +403,7 @@ main {
   padding-bottom: 185px;
 }
 
-.projects .card-project:nth-child(3*n) {
-  margin-left: 0px;
+ul.projects {
+  margin-bottom: -30px;
+  margin-left: -30px;
 }
