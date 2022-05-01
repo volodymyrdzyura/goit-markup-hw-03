@@ -25,7 +25,7 @@ li {
   list-style-type: none;
 }
 
-.header .pictures {
+.header {
   display: block;
   border-bottom: 1px solid #ececec;
 }
@@ -34,6 +34,7 @@ li {
 .navigation {
   display: flex;
   margin-left: 93px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
@@ -43,10 +44,12 @@ li {
 .navigation .link {
   display: block;
   padding: 32px 0px;
+  color: var(--primery-texy-color);
 }
 .contact-data {
   display: flex;
   margin-left: 331px;
+  color: var(--contact-data-color);
 }
 
 .navigation-head {
@@ -149,7 +152,6 @@ button:hover {
 }
 
 .link {
-  color: var(--primery-texy-color);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -226,6 +228,7 @@ a {
   padding-bottom: 94px;
   align-content: center;
 }
+
 ul,
 h1,
 h3,
@@ -248,8 +251,8 @@ p {
   justify-content: center;
 }
 
-.list-benefits h3 {
-  padding-bottom: 10px;
+.car-list h3 {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -331,22 +334,30 @@ p {
   display: block;
 }
 
-.address a {
-  padding-bottom: 9px;
+address {
+  margin-top: 20px;
+}
+
+.address {
+  margin-bottom: 9px;
+}
+.address:last-child {
+  margin-bottom: 0px;
+}
+.address:first-child {
+  color: var(--absolut-white-header);
+}
+
+.contact-footer {
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
-.address .link {
-  color: rgba(255, 255, 255, 0.6);
-}
-.address a:first-child {
+[href*="https"] {
   color: var(--absolut-white-header);
-}
-.address a:last-child {
-  padding-bottom: 0px;
 }
 
 footer .logo {
@@ -356,21 +367,12 @@ footer {
   padding: 60px 0px;
 }
 
-.address {
-  margin-top: 20px;
-}
-
 .site-contacts {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-a[href="mailto:info@example.com"],
-a[href="tel:+380991111111"] {
-  color: var(--secondary-text-color);
 }
 .filters {
   padding-top: 94px;
@@ -406,4 +408,8 @@ main {
 ul.projects {
   margin-bottom: -30px;
   margin-left: -30px;
+}
+
+.contact-links {
+  margin-top: 20px;
 }
